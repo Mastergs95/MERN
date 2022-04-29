@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon --inspect ./index.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dbinit":"nodemon --inspect ./scripts/dbinit.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "GD",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "nodemon": "^2.0.16"
+  }
+}
